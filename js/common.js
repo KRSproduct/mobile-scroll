@@ -1,6 +1,7 @@
 		new fullpage('#fullPage', {
 			autoScrolling: true,
-			navigation: true
+			navigation: true,
+			scrollingSpeed: 700,
 		})
 
 		/*ANIMATION*/
@@ -10,7 +11,7 @@ var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({
 	triggerElement: '.trigger1',
-	triggerHook: 0.7,
+	triggerHook: 0.8,
 	duration: '100%'
 })
 
@@ -21,6 +22,6 @@ var scene = new ScrollMagic.Scene({
 
 
 firstScroll
-.to('.bottle', 5, {x: 0, y: 500})
-.to('.bottle',5, {scale: 1.5})
+.to('.bottle', 4, {x: 0, y: 300})
+.to('.bottle',4, {scale: 1.5}, "-=4")
 
