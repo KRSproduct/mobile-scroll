@@ -1,0 +1,62 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	background-color: #000
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+h1
+	text-align: center
+	color: #ffd300
+	text-transform: uppercase
+ 	font-family: 'New_Zelek'
+  font-size: 48px
+	display: block
+
+.bottle
+	position: absolute
+	top: -30%
+	right: 25%
+	left: 25%
+	width: 200px
+	height: 600px
+	img
+		width: 100%
+		height: auto
+ 
+
+
+.s1
+	background: url('../img/DMfkVVWVwAAGUJb.jpg')
+	background-size: cover
+.s2 
+	background: url('../img/l4izp40j7lrz.jpg')
+	background-size: cover
+
+.s3 
+	background: url('../img/notebook-.jpg')
+	background-size: cover
+
+
+@import "media" // Always at the end
