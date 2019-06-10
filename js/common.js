@@ -12,7 +12,7 @@ var controller = new ScrollMagic.Controller();
 var scene = new ScrollMagic.Scene({
 	triggerElement: '.trigger1',
 	triggerHook: 0.8,
-	duration: '150%'
+	duration: 0
 })
 
 .setTween(firstScroll)
@@ -22,6 +22,6 @@ var scene = new ScrollMagic.Scene({
 
 
 firstScroll
-.to('.bottle', 4, {x: 0, y: 300})
-.to('.bottle',4, {scale: 1.5}, "-=4")
+.to('.bottle', 1, {x: 0, y: 450})
+.to('.bottle',1, {scale: 1.5}, "-=1")
 
